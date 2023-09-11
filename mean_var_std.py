@@ -1,10 +1,13 @@
 import numpy as np
 
-	def calculate(n):
+def calculate(n):
+	# Test to be sure the list is long enough, and that it's actually type: list
 	if len(n) != 9:
 		raise ValueError("List must contain 9 numbers.")
 	if n == []:
-		raise Exception("You must enter a list with 9 digits.")  
+		raise Exception("You must enter a list with 9 digits.")
+
+	# create numpy array object from the provided list
 	m = np.array([n]).reshape(3,3)
 	
 	# column, row, and flattened mean
