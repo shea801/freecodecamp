@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 
-path = "C:\\Users\\sheah\\Downloads\\Programming\\Practice_Data\\adult\\adult.txt"
+path = "~\\adult\\adult.txt"
 
 df = pd.read_csv(path,header=None, delimiter=",")
 
